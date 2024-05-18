@@ -1,0 +1,29 @@
+WITH MedianCalculation AS (
+    SELECT 
+        Country,
+        PERCENTILE_CONT(0.5) WITHIN GROUP (ORDER BY DailyVaccinations) AS MedianVaccinations
+    FROM 
+        VaccinationData
+    WHERE 
+        DailyVaccinations > 0
+    GROUP BY 
+        Country
+),
+MissingDataUpdate AS (
+    SELECT 
+        vd.Country,
+        vd.Date,
+        CASE 
+            WHEN vd.DailyVaccinations IS NULL OR vd.DailyVaccinations = 0 THEN COALESCE(mc.MedianVaccinations, 0)
+            ELSE vd.DailyVaccinations
+        END AS ImputedVaccinations
+    FROM 
+        VaccinationData vd
+    LEFT JOIN 
+        MedianCalculation mc ON vd.Country = mc.Country
+)
+UPDATE VaccinationData
+SET DailyVaccinations = ImputedVaccinations
+FROM MissingDataUpdate mdu
+WHERE VaccinationData.Country = mdu.Country
+AND VaccinationData.Date = mdu.Date;
