@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\x\\source\\repos\\ConsoleApp3\\",
+  "WorkspaceRootPath": "C:\\Users\\x\\Documents\\GitHub\\Technical-Questionnaire\\ConsoleApp3\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{75D79FC0-7163-4F2C-99A6-D2348A284894}|ConsoleApp3\\ConsoleApp3.csproj|c:\\users\\x\\source\\repos\\consoleapp3\\consoleapp3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{75D79FC0-7163-4F2C-99A6-D2348A284894}|ConsoleApp3\\ConsoleApp3.csproj|c:\\users\\x\\documents\\github\\technical-questionnaire\\consoleapp3\\consoleapp3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{75D79FC0-7163-4F2C-99A6-D2348A284894}|ConsoleApp3\\ConsoleApp3.csproj|solutionrelative:consoleapp3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -24,11 +24,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\x\\source\\repos\\ConsoleApp3\\ConsoleApp3\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\x\\Documents\\GitHub\\Technical-Questionnaire\\ConsoleApp3\\ConsoleApp3\\Program.cs",
               "RelativeDocumentMoniker": "ConsoleApp3\\Program.cs",
-              "ToolTip": "C:\\Users\\x\\source\\repos\\ConsoleApp3\\ConsoleApp3\\Program.cs",
+              "ToolTip": "C:\\Users\\x\\Documents\\GitHub\\Technical-Questionnaire\\ConsoleApp3\\ConsoleApp3\\Program.cs",
               "RelativeToolTip": "ConsoleApp3\\Program.cs",
-              "ViewState": "AQIAAFUAAAAAAAAAAAAUwHoAAAAAAAAA",
+              "ViewState": "AQIAABYAAAAAAAAAAAAQwAcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-18T16:13:51.729Z",
               "EditorCaption": ""
